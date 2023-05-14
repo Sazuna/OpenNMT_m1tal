@@ -8,8 +8,8 @@ EXT1=$(echo $SOURCE | rev | cut -d'.' -f 1 | rev)
 EXT2=$(echo $CIBLE | rev | cut -d'.' -f 1 | rev)
 
 # Tokenisation
-SOURCE1=$(echo $SOURCE | sed 's/10k\./10k.tok./g')
-CIBLE1=$(echo $CIBLE | sed 's/10k\./10k.tok./g')
+SOURCE1=$(echo $SOURCE | sed 's/\.\(..\)$/.tok.\1/g')
+CIBLE1=$(echo $CIBLE | sed 's/\.\(..\)$/.tok.\1/g')
 $SCRIPTS_HOME/tokenizer/tokenizer.perl -l en < $SOURCE > $SOURCE1
 $SCRIPTS_HOME/tokenizer/tokenizer.perl -l en < $CIBLE > $CIBLE1
 

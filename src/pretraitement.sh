@@ -27,7 +27,7 @@ $SCRIPTS_HOME/recaser/truecase.perl --model $MODEL1 < $SOURCE1 > $SOURCE2
 $SCRIPTS_HOME/recaser/truecase.perl --model $MODEL2 < $CIBLE1 > $CIBLE2
 
 
-# Nettoyage en imitant la longueur des phrases à 80 caractères
+# Nettoyage en limitant la longueur des phrases à 80 caractères
 
 BASE=${SOURCE2%.*}
 $SCRIPTS_HOME/training/clean-corpus-n.perl $BASE $EXT1 $EXT2 $BASE.clean 1 80

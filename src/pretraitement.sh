@@ -12,3 +12,8 @@
 
 ../../mosesdecoder/scripts/recaser/truecase.perl --model ../Translation/truecase-model.en < ../Translation/Europarl_train_10k.tok.en > ../Translation/Europarl_train_10k.tok.true.en
 ../../mosesdecoder/scripts/recaser/truecase.perl --model ../Translation/truecase-model.fr < ../Translation/Europarl_train_10k.tok.fr > ../Translation/Europarl_train_10k.tok.true.fr
+
+
+# Nettoyage en imitant la longueur des phrases à 80 caractères
+
+../../mosesdecoder/scripts/training/clean-corpus-n.perl ../Translation/Europarl_train_10k.tok.true fr en ../Translation/Europarl_train_10k.tok.true.clean 1 80

@@ -4,10 +4,12 @@
 
 ### pretraitement.sh
 
+S'assurer d'être dans le dossier src/
+
 `./pretraitement.sh $SOURCE $CIBLE`
 Par exemple:
-- SOURCE = Europarl_train_10k.fr
-- CIBLE = Europarl_train_10k.en
+- SOURCE = ../data/Europarl/Europarl_train_10k.fr
+- CIBLE = ../data/Europarl/Europarl_train_10k.en
 
 ### corpus_europarl_emea.sh
 

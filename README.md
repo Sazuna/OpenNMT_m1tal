@@ -1,5 +1,9 @@
 # OpenNMT_m1tal
 
+Liza FRETEL
+Kenza AHMIA
+Alice WALLARD
+
 ## Comment lancer les scripts ?
 
 ### pretraitement.sh

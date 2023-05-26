@@ -1,0 +1,33 @@
+# toy_en_de.yaml
+
+## Where the samples will be written
+save_data: EuroparlEMEA/run/example
+## Where the vocab(s) will be written
+src_vocab: EuroparlEMEA/run/example.vocab.src
+tgt_vocab: EuroparlEMEA/run/example.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: False
+
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: lemmaEuroEmea/Europarl_EMEA_110k.tok.true.clean.lemma.fr
+        path_tgt: lemmaEuroEmea/Europarl_EMEA_110k.tok.true.clean.lemma.en
+    valid:
+        path_src: lemmaEuroEmea/Europarl_test_500.tok.true.clean.lemma.fr
+        path_tgt: lemmaEuroEmea/Europarl_test_500.tok.true.clean.lemma.en
+
+
+# Vocabulary files that were just created
+src_vocab: lemmaEuroEmea/run/example.vocab.src
+tgt_vocab: lemmaEuroEmea/run/example.vocab.tgt
+
+# Train on a single GPU
+world_size: 1
+#gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: lemmaEuroEmea/run/model
+save_checkpoint_steps: 2500
+train_steps: 30000
+valid_steps: 2500

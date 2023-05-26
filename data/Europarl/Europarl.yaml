@@ -28,6 +28,6 @@ world_size: 1
 
 # Where to save the checkpoints
 save_model: Europarl/run/model
-save_checkpoint_steps: 500
-train_steps: 1000
-valid_steps: 500
+save_checkpoint_steps: 2500
+train_steps: 30000
+valid_steps: 2500
